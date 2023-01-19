@@ -1,6 +1,6 @@
 <template>
   <!--菜单-->
-  <Menu mode="horizontal" :theme="theme" active-name="1" width="auto">
+  <Menu mode="horizontal" :theme="theme" active-name="1">
     <!--首页-->
     <MenuItem name="1" @click="gotoMainPage">首页</MenuItem>
     <!--介绍-->
@@ -20,12 +20,9 @@
     <!--小黑屋-->
     <MenuItem name="10" @click="gotoBanPage">封神榜</MenuItem>
     <!--消息-->
-    <MenuItem name="11">消息</MenuItem>
-    <!--搜索框-->
-    <Input placeholder="随便搜搜呗(≧∇≦)ﾉ" style="width: 400px; margin: 10px" />
-    <!--搜索按钮-->
-    <Button type="primary" icon="ios-search" style="margin: 10px">Search</Button>
-
+    <MenuItem name="11">公告</MenuItem>
+    <!--搜索框连带搜索按钮-->
+    <Input search enter-button style="width: auto" :border="false" placeholder="随便搜搜呗(≧∇≦)ﾉ"/>
   </Menu>
 </template>
 
